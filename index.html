@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <!-- calculator -->
+
+        <section class="calculator">
+            <input class="cl-display" id="cl-display" value="">
+
+            <div class="cl-body">
+                <div class="cl-btns">
+                    <div class="cl-btn" onclick=d_clear()>C</div>
+                    <div class="cl-btn" onclick=d_delete()>del</div>
+                    <div class="cl-btn" onclick="cl_operator('%')">%</div>
+                    <div class="cl-btn" onclick="cl_operator('/')">/</div>
+                    <div class="cl-btn" onclick=cl_num(7)>7</div>
+                    <div class="cl-btn" onclick=cl_num(8)>8</div>
+                    <div class="cl-btn" onclick=cl_num(9)>9</div>
+                    <div class="cl-btn" onclick="cl_operator('*')">*</div>
+                    <div class="cl-btn" onclick=cl_num(4)>4</div>
+                    <div class="cl-btn" onclick=cl_num(5)>5</div>
+                    <div class="cl-btn" onclick=cl_num(6)>6</div>
+                    <div class="cl-btn" onclick="cl_operator('-')">-</div>
+                    <div class="cl-btn" onclick=cl_num(1)>1</div>
+                    <div class="cl-btn" onclick=cl_num(2)>2</div>
+                    <div class="cl-btn" onclick=cl_num(3)>3</div>
+                    <div class="cl-btn" onclick="cl_operator('+')">+</div>
+                    <div class="cl-btn" onclick=cl_num(0)>0</div>
+                    <div class="cl-btn" onclick="cl_num('.')">.</div>
+                    <div class="cl-btn" onclick="calculate()" id="cl-btn-equal">=</div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

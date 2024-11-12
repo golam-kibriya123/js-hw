@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.calculator {
+    width: 350px;
+    background: black;
+    border-radius: 20px;
+    padding: 40px 20px;
+    border: 2px solid rgb(23, 104, 186);
+}
+
+.calculator .cl-display {
+    height: 100px;
+    background: rgba(23, 104, 186, 0.208);
+    border: 2px solid rgb(23, 104, 186);
+    border-radius: 20px;
+    padding: 0 10px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(97, 139, 198);
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.calculator .cl-display .operator {
+    color: rgb(23, 104, 186);
+    margin: 0 2px;
+    display: inline;
+}
+
+.cl-body .cl-btns {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cl-body .cl-btn {
+    color: rgb(23, 104, 186);
+    background: #000;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: inset 1px 1px 0px 1px, 1px 1px 0px 1px;
+    cursor: pointer;
+    transition: all .3s;
+
+}
+
+#cl-btn-equal {
+    grid-column: span 2;
+}
+
+.cl-body .cl-btn:hover {
+    box-shadow: inset -1px -1px 5px -1px, -1px -1px 5px -1px;
+
+}
