@@ -10,12 +10,13 @@
 
 main {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
     width: 100%;
     padding: 50px;
+    row-gap: 30px;
 }
 
 .calculator {
@@ -82,3 +83,49 @@ main {
     box-shadow: inset -1px -1px 5px -1px, -1px -1px 5px -1px;
 
 }
+
+/* Counting */
+.Counting {
+    height: 300px;
+    width: 400px;
+}
+
+.Counting textarea {
+    background: rgba(23, 104, 186, 0.34);
+    border: 2px solid rgb(23, 104, 186);
+    border-bottom: none;
+    width: 100%;
+    min-height: 150px;
+    font-size: 20px;
+    color: rgb(23, 104, 186);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+    border-radius: 20px 20px 0 0;
+}
+
+.Counting textarea:focus {
+    outline: none;
+}
+
+
+.Counting .info {
+    background: rgba(23, 104, 186, 0.34);
+    color: rgb(23, 104, 186);
+    border: 2px solid rgb(23, 104, 186); border-top: none;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.Counting .info ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Counting .info {}
