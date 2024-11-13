@@ -17,6 +17,7 @@ main {
     width: 100%;
     padding: 50px;
     row-gap: 30px;
+    background: rgba(83, 83, 83, 0.162);
 }
 
 .calculator {
@@ -63,13 +64,17 @@ main {
 .cl-body .cl-btn {
     color: rgb(23, 104, 186);
     background: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
     font-size: 18px;
     font-weight: bolder;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
     padding: 15px 20px;
-    box-shadow: inset 1px 1px 0px 1px, 1px 1px 0px 1px;
+    box-shadow: inset rgb(23, 104, 186) 1px 1px 0px 1px, rgb(23, 104, 186) 1px 1px 0px 1px;
     cursor: pointer;
     transition: all .3s;
 
@@ -80,11 +85,18 @@ main {
 }
 
 .cl-body .cl-btn:hover {
-    box-shadow: inset -1px -1px 5px -1px, -1px -1px 5px -1px;
+    box-shadow: inset rgb(23, 104, 186)-1px -1px 5px -1px, rgb(23, 104, 186) -1px -1px 5px -1px;
 
 }
 
 /* Counting */
+.Counting-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
 .Counting {
     height: 300px;
     width: 400px;
@@ -114,7 +126,8 @@ main {
 .Counting .info {
     background: rgba(23, 104, 186, 0.34);
     color: rgb(23, 104, 186);
-    border: 2px solid rgb(23, 104, 186); border-top: none;
+    border: 2px solid rgb(23, 104, 186);
+    border-top: none;
     border-radius: 0 0 20px 20px;
     width: 100%;
     padding: 20px;
@@ -126,6 +139,43 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 18px;
 }
 
-.Counting .info {}
+.Counting .info ol li:first-child {
+    width: 41%;
+}
+
+.Counting .info ol li:first-child input {
+    width: 80%;
+    margin-top: 5px;
+    border: 2px solid rgb(23, 104, 186);
+    background: rgba(255, 255, 255, 0.228);
+    color: rgb(23, 104, 186);
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+.Counting .info ol li:first-child input:focus {
+    outline: none;
+}
+
+.counting-btns {}
+
+.counting-btns button {
+    background: rgb(23, 104, 186);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 10px;
+    font-size: 18px;
+    box-shadow: inset #000 -5px -6px 10px -20px, #000 2px 2px 3px 2px;
+}
+
+.counting-btns button:hover {
+
+    box-shadow: inset #000 -5px -6px 10px -20px, inset #000 2px 2px 3px 2px;
+}
