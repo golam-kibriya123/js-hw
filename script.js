@@ -33,7 +33,7 @@ function d_delete() {
 }
 // text_field text counter modal
 
-let open = document.getElementById("counter-open"); 
+let open = document.getElementById("counter-open");
 open.style.color = "red";
 
 let massageField = document.querySelector('.Counting');
@@ -46,13 +46,16 @@ open.addEventListener("click", function () {
     if (openStatus != true) {
         open.innerText = "open character counter";
         open.style.color = "#fff";
-        massageField.style.display = "none"
+        massageField.style.visibility = "hidden";
+         massageField.style.transform = "scale(0,0)";
+
 
     }
     else if (openStatus = true) {
         open.innerText = "close character counter";
         open.style.color = "red";
-        massageField.style.display = "block";
+        massageField.style.visibility = "visible";
+        massageField.style.transform = "scale(1)";
 
 
     }
